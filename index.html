@@ -38,11 +38,38 @@ body{
 }
 
 .logo{
-    font-size:26px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    line-height:1;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+    margin-bottom:5px;
+}
+
+.logo-name{
+    text-align:center;
+    font-size:22px;
     font-weight:900;
     letter-spacing:2px;
 }
 
+.logo-name span{
+    color:#e63946;
+}
+
+.logo-name small{
+    display:block;
+    margin-top:5px;
+    font-size:11px;
+    letter-spacing:7px;
+    color:#e63946;
+}
 .logo span{
     color:#e63946;
 }
@@ -475,7 +502,14 @@ body{
 <nav class="navbar">
 
 <div class="logo">
-CRACK <span>DOWN SPORTS</span>
+
+    <img src="logo.jpg.jpeg" alt="Crack Down Sports Logo">
+
+    <div class="logo-name">
+        <div>CRACK <span>DOWN</span></div>
+        <small>S P O R T S</small>
+    </div>
+
 </div>
 
 <ul class="nav-links">
